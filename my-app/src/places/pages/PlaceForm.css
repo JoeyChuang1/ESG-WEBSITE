@@ -1,0 +1,17 @@
+.place-form {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px 15px; 
+    letter-spacing: 1px;
+    width: 90%;
+    max-width: 40rem;
+    box-shadow: inset 0 0 2px #000000;
+    border-radius: 6px;
+    background: rgb(6, 6, 7);
+    color: #cdbe91;
+    border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+    border-image-slice: 1;
+    border-width: 2px;
+  }
+  
