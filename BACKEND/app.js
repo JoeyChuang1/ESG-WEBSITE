@@ -8,10 +8,17 @@ require("dotenv").config();
 const placesRoutes = require('./routes/places-routes');
 const usersRoutes = require('./routes/users-routes');
 const HttpError = require('./models/http-error');
-
+const cors = require('cors')
 const app = express();
 
 app.use(bodyParser.json());
+app.use(cors(
+  {
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    method: ["POST", "GET", "PATCH", "DELETE"],
+    credentials: true
+  }
+));
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
 
