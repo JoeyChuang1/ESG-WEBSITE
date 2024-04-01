@@ -12,13 +12,6 @@ const cors = require('cors')
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors(
-  {
-    origin: ["https://deploy-mern-1whq.vercel.app"],
-    method: ["POST", "GET", "PATCH", "DELETE"],
-    credentials: true
-  }
-));
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
 
