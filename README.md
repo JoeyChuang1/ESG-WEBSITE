@@ -49,16 +49,22 @@ Before running the project locally, ensure you have installed:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/JoeyChuang1/ESG-WEBSITE.git
+   
 Navigate to the project directory:
 
+bash
+複製
 cd ESG-WEBSITE
 Install dependencies for the client:
 
+bash
+複製
 cd client
 npm install
 Install dependencies for the server:
 
-
+bash
+複製
 cd ../server
 npm install
 Configure Environment Variables:
@@ -66,28 +72,33 @@ Configure Environment Variables:
 In the server directory, create a .env file and add the following variables (adjust as needed):
 
 env
+複製
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 JWT_SECRET=your_jwt_secret
 Usage
 Start the backend server:
 
-
+bash
+複製
 cd server
 npm start
 Start the frontend application:
 
-
+bash
+複製
 cd client
 npm start
-Access the application: Open your browser and go to http://localhost:3000.
+Access the application:
+
+Open your browser and navigate to http://localhost:3000.
 
 Deployment
 The project is deployed on Vercel. You can view the live application here:
 https://esg-website-ten.vercel.app/
 
 Contributing
-Contributions are welcome! If you’d like to help improve the project:
+Contributions are welcome! To contribute:
 
 Fork the repository.
 
@@ -108,3 +119,8 @@ For further information or inquiries, please contact:
 Joey Chuang – GitHub Profile
 
 Email: your-email@example.com
+
+Acknowledgements
+Placeholder Logo
+
+[Other acknowledgements if applicable]
