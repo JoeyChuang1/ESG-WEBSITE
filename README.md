@@ -50,34 +50,30 @@ Before running the project locally, ensure you have installed:
    ```bash
    git clone https://github.com/JoeyChuang1/ESG-WEBSITE.git
    
-Navigate to the project directory:
+2. **Installation Setup:**
+   - **Navigate to the project directory:**
+     ```bash
+     cd ESG-WEBSITE
+     ```
+   - **Install dependencies for the client:**
+     ```bash
+     cd client
+     npm install
+     ```
+   - **Install dependencies for the server:**
+     ```bash
+     cd ../server
+     npm install
+     ```
+   - **Configure Environment Variables:**
 
-bash
-複製
-cd ESG-WEBSITE
-Install dependencies for the client:
+     In the server directory, create a `.env` file and add the following variables (adjust as needed):
+     ```env
+     MONGO_URI=your_mongodb_connection_string
+     PORT=5000
+     JWT_SECRET=your_jwt_secret
+     ```
 
-bash
-複製
-cd client
-npm install
-Install dependencies for the server:
-
-bash
-複製
-cd ../server
-npm install
-Configure Environment Variables:
-
-In the server directory, create a .env file and add the following variables (adjust as needed):
-
-env
-複製
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-JWT_SECRET=your_jwt_secret
-Usage
-Start the backend server:
 
 bash
 複製
